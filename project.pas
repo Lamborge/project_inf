@@ -6,7 +6,7 @@ function sum_arr(z:array of integer):integer;
 var sum, i:integer;
 begin
   sum:=0;
-  for i:=0 to length(z)-1 do sum:=sum+z[_i];
+  for i:=0 to length(z)-1 do sum:=sum+z[i];
   sum_arr:=sum;
 end;
 
