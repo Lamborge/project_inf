@@ -42,5 +42,6 @@ begin
   SetLength(C,M+1);
   randomize;
   rand_arr(A); rand_arr(B); rand_arr(C);
-  writeln('Самое большее время признания: ', max_num(sum_arr(A),max(sum_arr(B),sum_arr(C))));
+  writeln('Самое большее время признания у стада: ', max_num(sum_arr(A),max(sum_arr(B),sum_arr(C))));
+  writeln('Самое большее время признания животного: ', max_num(max_el(A),max(max_el(B),max_el(C))));
 end.
