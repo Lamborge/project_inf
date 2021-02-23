@@ -1,8 +1,7 @@
 ﻿program project;
 var
   A,B,C:array of integer;
-  N,K,M,max_time:integer;
-  i:byte;
+  N,K,M:integer;
 function sum_arr(z:array of integer):integer;
 var sum, _i:integer;
 begin
@@ -37,9 +36,9 @@ begin
   writeln('Введите кол-во баранов в стаде 1: '); read(N);
   writeln('Введите кол-во баранов в стаде 2: '); read(K);
   writeln('Введите кол-во баранов в стаде 3: '); read(M);
-  SetLength(A,N+1);
-  SetLength(B,K+1);
-  SetLength(C,M+1);
+  SetLength(A,N);
+  SetLength(B,K);
+  SetLength(C,M);
   randomize;
   rand_arr(A); rand_arr(B); rand_arr(C);
   writeln('Самое большее время признания у стада: ', max_num(sum_arr(A),max(sum_arr(B),sum_arr(C))));
