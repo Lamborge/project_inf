@@ -3,26 +3,26 @@ var
   A,B,C:array of integer;
   N,K,M:integer;
 function sum_arr(z:array of integer):integer;
-var sum, _i:integer;
+var sum, i:integer;
 begin
   sum:=0;
-  for _i:=0 to length(z)-1 do sum:=sum+z[_i];
+  for i:=0 to length(z)-1 do sum:=sum+z[_i];
   sum_arr:=sum;
 end;
 
 function max_el(z:array of integer):integer;
-var _i:byte; max:integer;
+var i:byte; max:integer;
 begin
   max:=0;
-  for _i:=0 to length(z)-1 do if z[_i]>max then max:=z[_i];
+  for i:=0 to length(z)-1 do if z[i]>max then max:=z[i];
   max_el:=max;
 end;
 
 function rand_arr(z:array of integer):array of integer;
-var _i:byte;
+var i:byte;
 begin
-  for _i:=0 to length(z)-1 do begin
-  z[_i]:=random(100);
+  for i:=0 to length(z)-1 do begin
+  z[i]:=random(100);
   end;
   rand_arr:=z;
 end;
